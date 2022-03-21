@@ -1,0 +1,25 @@
+{
+
+"Excercises": [
+    {
+        "ID": 0,
+        "Day": "Day 1"
+
+    },
+    {
+        "ID": 1,
+        "Day": "Day 2"
+    }
+  ],
+
+  "Description": [
+    {
+      "Dis": "Back Day",
+      "DayID": 0
+    },
+    {
+        "Dis": "ChestDay",
+        "DayID": 1
+    }
+  ]
+}

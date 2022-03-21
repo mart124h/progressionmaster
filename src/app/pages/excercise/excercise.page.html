@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-back-button></ion-back-button>
+  </ion-buttons>
+  <ion-title> {{ excercise.Name }} ppef </ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+ <ion-content class="ion-padding">
+  
+  <ion-grid class="ion-margin">
+    <ion-row>
+      <ion-col>Record</ion-col>
+      <ion-col>Reps</ion-col>
+      <ion-col>Sets</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let stat of stats; index as i">
+      <ion-col>{{ i + 1 }}</ion-col>
+      <ion-col>{{ stat.Reps }}</ion-col>
+      <ion-col>{{ stat.Sets }}</ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  
+  
+  
+ </ion-content>
+
+

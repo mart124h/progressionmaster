@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Excercises</ion-title>
+  </ion-toolbar>
+</ion-header>
+  <!-- fab placed to the (vertical) center and end -->
+ 
+<ion-content [scrollEvents]="true">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-list>
+    <ion-item *ngFor="let excercise of excercises"
+              [routerLink]="['/excercise', { eID: excercise.ID 
+              }
+            ]"
+              routerDirection="forward">
+      <h6 class="excerciseHeader">{{ excercise.Name }} </h6>
+      <h6 style="font-style:italic;">&nbsp;&nbsp;&nbsp;({{ excercise.Target}})</h6>
+    </ion-item>
+  </ion-list>
+</ion-content>
